@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  flex-basis: 100px;
+  background-color: #1a2533;
+  display: flex;
+  padding: 0 100px;
+}
+
+.header .search-box {
+  flex: 1;
+  height: 30px;
+  align-self: center;
+  margin-right: 50px;
+  padding-left: 10px;
+  background-color: transparent;
+  outline: none;
+  border: 1px solid #8d8f92;
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.header .search-button {
+  flex-basis: 140px;
+  flex-shrink: 0;
+  height: 40px;
+  align-self: center;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  background-color: #ffffff;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #000000;
+  user-select: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.header .search-button:hover {
+  background-color: #1a2533;
+  color: #ffffff;
+}
+
+.controls {
+  flex-basis: 50px;
+  background-color: #22364e;
+  font-size: 18px;
+  color: #ffffff;
+  display: flex;
+}
+
+.controls .sort-repo {
+  margin: auto;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.main {
+  flex: 1;
+  padding: 10px 0;
+  background-color: #22364e;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.main .user-details, .main .user-repos, .main .repo-details {
+  background-color: #eeeeee;
+  border-radius: 5px;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.main .user-details {
+  flex-basis: 35%;
+}
+
+.main .user-details .user-header{
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.main .user-repos {
+  flex-basis: 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main .repo-details {
+  flex-basis: 30%;
+  padding: 10px;
+}
+
+.main .user-details .user-container {
+  flex-basis: 80%;
+  margin: 20px;
+}
+
+.main .user-details .user-container .user-name,
+.main .user-details .user-container .user-followers,
+.main .user-details .user-container .user-following,
+.main .user-details .user-container .user-email,
+.main .user-details .user-container .user-bio {
+  margin-bottom: 10px; 
+  font-size: 18px;
+}
+
+.main .user-details .user-container .user-avatar {
+  height: 100px;
+  margin-bottom: 10px; 
+}
+
+.main .user-repos div{
+  margin: 10px;
+  padding: 5px;
+  font-size: 18px;
+  border: 1px solid #1a2533;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.main .repo-details .repo-container {
+  flex-basis: 80%;
+  margin: 0 auto;  
+  padding: 5px;
+}
+
+.main .repo-details .repo-container .repo-name,
+.main .repo-details .repo-container .repo-description,
+.main .repo-details .repo-container .repo-stars,
+.main .repo-details .repo-container .repo-stars,
+.main .repo-details .repo-container .repo-language,
+.main .repo-details .repo-container .repo-link {
+  margin-bottom: 15px; 
+  font-size: 18px;
+}
